@@ -1,0 +1,20 @@
+name: Outpost Notify
+description: Register deployment to your Outpost
+author: https://github.com/outpostso
+requirements:
+  - bash
+configuration:
+  properties:
+    token:
+      type: string
+    name:
+      type: array
+    version:
+      type: string
+    sha:
+      type: string
+    user:
+      type: string
+  required:
+    - token
+
