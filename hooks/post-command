@@ -55,7 +55,7 @@ if [[ "${NAME_ARRAY}" == "[]" ]]; then
 fi
 
 if [[ -n $VERSION_CMD ]]; then
-  VERSION=$($VERSION_CMD)
+  VERSION=$($VERSION_CMD | tr -d '\n')
 fi
 
 curl --silent --request POST \
