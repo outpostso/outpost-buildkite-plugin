@@ -25,7 +25,7 @@ steps:
           user: "Web Team"
 ```
 
-Example with bundled deployments :
+Example with bundled deployments:
 
 ```yml
 steps:
@@ -34,6 +34,18 @@ steps:
           token: "2280176a7327d1510cb5..."
           name: ["prod-outpost-api", "prod-outpost-worker", "prod-outpost-mail"]
           version: "3.2.1"
+          user: "Web Team"
+```
+
+Example with version generate via command:
+
+```yml
+steps:
+  - plugins:
+      - outpostso/outpost#v1.0.0:
+          token: "2280176a7327d1510cb5..."
+          name: ["prod-outpost-api", "prod-outpost-worker", "prod-outpost-mail"]
+          version-cmd: "make version"
           user: "Web Team"
 ```
 
